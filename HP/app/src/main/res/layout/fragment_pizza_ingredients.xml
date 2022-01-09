@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:gravity="center"
+        android:text="@string/ingredients_in_pizza"
+        android:textColor="@color/dark_cyan"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_ingPizza1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="50dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/cheese"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_ingPizza1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cheese"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_ingPizza1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="65dp"
+        android:layout_marginStart="40dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza1"
+        android:background="@color/underline"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_ingPizza2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bicky_broodjes"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_ingPizza2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bread"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_ingPizza2"
+        app:layout_constraintTop_toBottomOf="@id/tv_ingPizza1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="70dp"
+        android:layout_marginStart="40dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza2"
+        android:background="@color/underline"/>
+
+    <ImageView
+        android:id="@+id/iv_ingPizza3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/salad"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="40dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza3"
+        android:background="@color/underline"/>
+
+    <TextView
+        android:id="@+id/tv_ingPizza3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/salad"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_ingPizza3"
+        app:layout_constraintTop_toBottomOf="@id/tv_ingPizza2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="70dp"
+        android:layout_marginStart="40dp"/>
+
+    <ImageView
+        android:id="@+id/iv_ingPizza4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/beef"
+        app:layout_constraintTop_toBottomOf="@id/iv_ingPizza3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="40dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_ingPizza4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/beef"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_ingPizza4"
+        app:layout_constraintTop_toBottomOf="@id/tv_ingPizza3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="65dp"
+        android:layout_marginStart="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
